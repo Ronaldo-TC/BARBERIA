@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% block content %}
+  <!-- Área de breadcrumb Start -->
+  <div class="section breadcrumb-area bg-bright">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="breadcrumb-wrapper">
+            <h2 class="breadcrumb-title">Ponerse en contacto</h2>
+            <ul>
+              <li>
+                <a href="index.html">Inicio</a>
+              </li>
+              <li>Ponerse en contacto</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Área de breadcrumb End -->
+
+  <!-- Sección de contacto Start -->
+  <div class="section section-margin">
+    <div class="container">
+      <div class="row mb-n10">
+        <div class="col-12 col-lg-6 mb-10 order-2 order-lg-1" data-aos="fade-up" data-aos-duration="1000">
+          <!-- Título de sección Start -->
+          <div class="contact-title pb-3">
+            <h2 class="title">Ponerse en contacto</h2>
+          </div>
+          <!-- Título de sección End -->
+
+          <!-- Wrapper de formulario de contacto Start -->
+          <div class="contact-form-wrapper contact-form">
+            <form action="assets/php/RonaldoTC.php" id="contact-form" method="post">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-area mb-4">
+                        <input class="input-item" type="text" placeholder="Tu nombre *" name="name" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="input-area mb-4">
+                        <input class="input-item" type="email" placeholder="Correo electrónico *" name="email" />
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="input-area mb-4">
+                        <input class="input-item" type="text" placeholder="Asunto *" name="subject" />
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="input-area mb-8">
+                        <textarea cols="30" rows="5" class="textarea-item" name="message" placeholder="Mensaje"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit" id="submit" name="submit" class="btn btn-primary btn-hover-dark">Enviar mensaje</button>
+                    </div>
+                    <p class="col-8 form-message mb-0"></p>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <p class="form-messege"></p>
+          </div>
+          <!-- Wrapper de formulario de contacto End -->
+        </div>
+        <div class="col-12 col-lg-6 mb-10 order-1 order-lg-2" data-aos="fade-up" data-aos-duration="1500">
+          <!-- Título de sección Start -->
+          <div class="contact-title pb-3">
+            <h2 class="title">Información de contacto</h2>
+          </div>
+          <!-- Título de sección End -->
+          <div class="contact-content">
+            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram anteposuerit litterarum formas human.</p>
+            <address class="contact-block">
+              <ul>
+                <li>
+                  <i class="fa fa-fax"></i> Tu dirección va aquí
+                </li>
+                <li>
+                  <i class="fa fa-phone"></i> <a href="tel:123-123-456-789">123 123 456 789</a>
+                </li>
+                <li>
+                  <i class="fa fa-envelope-o"></i> <a href="mailto:demo@example.com">demo@example.com</a>
+                </li>
+              </ul>
+            </address>
+
+            <div class="working-time">
+              <h6 class="title">Horarios de trabajo</h6>
+              <p>Lunes – sábado: 08AM – 22PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sección de contacto End -->
+
+  <!-- Contact Map Start -->
+  <div class="section">
+    <!-- Google Map Area Start -->
+    <div class="google-map-area w-100" data-aos="fade-up" data-aos-duration="1000">
+      <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15303.130170618979!2d-68.17934260344238!3d-16.486545139512355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1729026630245!5m2!1ses!2sbo"></iframe>
+    </div>
+    <!-- Google Map Area Start -->
+  </div>
+  <!-- Contact Map End -->
+
+  <img src="{{ url_for('static', filename='images/mapa.jpg') }}" alt="Mapa ficticio de la empresa" />
+{% endblock %}

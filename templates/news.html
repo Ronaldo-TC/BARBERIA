@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Noticias</h2>
+  <section id="news-list">
+    <div class="news-item">
+      <img src="{{ url_for('static', filename='images/news1.jpg') }}" alt="Noticia 1" />
+      <h3>Título de la Noticia 1</h3>
+      <p>Descripción breve de la noticia 1.</p>
+    </div>
+  </section>
+{% endblock %}
