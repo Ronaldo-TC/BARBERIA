@@ -1,29 +1,202 @@
 {% extends 'base.html' %}
 {% block content %}
-  <!-- Sección de Servicios -->
-  <div class="col-12 col-sm-6 col-lg-3 mb-8" data-aos="fade-up" data-aos-duration="1800">
-    <div class="single-footer-widget">
-      <h2 class="widget-title">Servicios</h2>
-      <ul class="widget-list">
-        <li>
-          <a href="#">Corte de Cabello</a>
-        </li>
-        <li>
-          <a href="#">Tinte y Coloración</a>
-        </li>
-        <li>
-          <a href="#">Peinados y Estilismo</a>
-        </li>
-        <li>
-          <a href="#">Tratamientos Capilares</a>
-        </li>
-        <li>
-          <a href="#">Manicura y Pedicura</a>
-        </li>
-        <li>
-          <a href="#">Depilación</a>
-        </li>
-      </ul>
+  <!-- Breadcrumb Area Start -->
+  <div class="section breadcrumb-area bg-bright">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="breadcrumb-wrapper">
+            <h2 class="breadcrumb-title">Nuestros Servicios</h2>
+            <ul>
+              <li>
+                <a href="/">Inicio</a>
+              </li>
+              <li>Nuestros Servicios</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <!-- Breadcrumb Area End -->
+
+  <!-- Services Section Start -->
+  <div class="section section-margin">
+    <div class="container">
+      <div class="row mb-n6">
+        <div class="col-md-6 pe-lg-9 pe-3 mb-6" data-aos="fade-up" data-aos-duration="1000">
+          <!-- Services Thumb Start -->
+          <div class="services-thumb">
+            <img class="fit-image" src="assets/images/services/1.png" alt="Servicios de peluquería" />
+          </div>
+          <!-- Services Thumb End -->
+        </div>
+        <div class="col-md-6 align-self-center mb-6" data-aos="fade-up" data-aos-duration="1500">
+          <!-- Services Content Start -->
+          <div class="services-content">
+            <h2 class="title">Descubre Nuestros Servicios</h2>
+            <p>En nuestra peluquería, ofrecemos una variedad de servicios diseñados para resaltar tu belleza y estilo personal. Con un equipo de expertos listos para atenderte, garantizamos una experiencia única y satisfactoria.</p>
+            <ul class="services-content-list">
+              <li>
+                <span><i class="ti-angle-double-right"></i></span> Corte de cabello y estilismo
+              </li>
+              <li>
+                <span><i class="ti-angle-double-right"></i></span> Coloración y tratamientos capilares
+              </li>
+              <li>
+                <span><i class="ti-angle-double-right"></i></span> Afeitado y arreglos de barba
+              </li>
+              <li>
+                <span><i class="ti-angle-double-right"></i></span> Manicura y pedicura
+              </li>
+            </ul>
+            <a href="/contact" class="btn btn-primary btn-hover-dark">Contáctanos</a>
+          </div>
+          <!-- Services Content End -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services Section End -->
+
+  <!-- Testimonial Section Start -->
+  <div class="section bg-bright section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Testimonial Carousel Start -->
+          <div class="testimonial-carousel">
+            <!-- Testimonial Gallery Top Start -->
+            <div class="swiper-container testimonial-gallery-top" data-aos="fade-up" data-aos-duration="1000">
+              <div class="swiper-wrapper">
+                <!-- Single Swiper Slide Start -->
+                <div class="swiper-slide">
+                  <!-- Testimonial Content Start -->
+                  <div class="testimonial-content text-center">
+                    <p>"¡El mejor lugar para un corte! Me sentí increíble después de mi visita."</p>
+                  </div>
+                  <!-- Testimonial Content End -->
+                </div>
+                <!-- Single Swiper Slide End -->
+
+                <!-- Single Swiper Slide Start -->
+                <div class="swiper-slide">
+                  <!-- Testimonial Content Start -->
+                  <div class="testimonial-content text-center">
+                    <p>"Excelente atención y un ambiente muy agradable. ¡Recomiendo totalmente!"</p>
+                  </div>
+                  <!-- Testimonial Content End -->
+                </div>
+                <!-- Single Swiper Slide End -->
+              </div>
+            </div>
+            <!-- Testimonial Gallery Top End -->
+
+            <!-- Testimonial Gallery Thumb Start -->
+            <div class="swiper-container testimonial-gallery-thumbs" data-aos="fade-up" data-aos-duration="1500">
+              <div class="swiper-wrapper">
+                <!-- Single Swiper Slide Start -->
+                <div class="swiper-slide">
+                  <!-- Testimonial Thumb Start -->
+                  <div class="testimonial-thumb text-center">
+                    <img src="assets/images/testimonial/1.png" alt="Testimonio de cliente" />
+                    <h3 class="thumb-title">Carlos Pérez</h3>
+                    <h6 class="thumb-subtitle">Cliente</h6>
+                  </div>
+                  <!-- Testimonial Thumb End -->
+                </div>
+                <!-- Single Swiper Slide End -->
+
+                <!-- Single Swiper Slide Start -->
+                <div class="swiper-slide">
+                  <!-- Testimonial Thumb Start -->
+                  <div class="testimonial-thumb text-center">
+                    <img src="assets/images/testimonial/2.png" alt="Testimonio de cliente" />
+                    <h3 class="thumb-title">Ana García</h3>
+                    <h6 class="thumb-subtitle">Cliente</h6>
+                  </div>
+                  <!-- Testimonial Thumb End -->
+                </div>
+                <!-- Single Swiper Slide End -->
+              </div>
+
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- Testimonial Gallery Thumb End -->
+          </div>
+          <!-- Testimonial Carousel End -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimonial Section End -->
+
+  <!-- Team Section Start -->
+  <div class="section section-margin">
+    <div class="container">
+      <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1 mb-n6">
+        <div class="col mb-6" data-aos="fade-up" data-aos-duration="1000">
+          <!-- Single Team Wrapper Start -->
+          <div class="single-team-wrapper">
+            <div class="thumb">
+              <a href="/contact"><img class="fit-image" src="assets/images/team/1.jpg" alt="Imagen del equipo" /></a>
+              <!-- Social Share Start -->
+              <div class="social-share">
+                <a title="Facebook" href="#/"><i class="ti-facebook"></i></a>
+                <a title="Instagram" href="#/"><i class="ti-instagram"></i></a>
+              </div>
+              <!-- Social Share End -->
+            </div>
+            <div class="content">
+              <h4 class="title">Sofía Morales</h4>
+              <h4 class="subtitle">Estilista Senior</h4>
+            </div>
+          </div>
+          <!-- Single Team Wrapper End -->
+        </div>
+
+        <div class="col mb-6" data-aos="fade-up" data-aos-duration="1500">
+          <!-- Single Team Wrapper Start -->
+          <div class="single-team-wrapper">
+            <div class="thumb">
+              <a href="/contact"><img class="fit-image" src="assets/images/team/2.jpg" alt="Imagen del equipo" /></a>
+              <!-- Social Share Start -->
+              <div class="social-share">
+                <a title="Facebook" href="#/"><i class="ti-facebook"></i></a>
+                <a title="Instagram" href="#/"><i class="ti-instagram"></i></a>
+              </div>
+              <!-- Social Share End -->
+            </div>
+            <div class="content">
+              <h4 class="title">Juan Ramírez</h4>
+              <h4 class="subtitle">Barbero</h4>
+            </div>
+          </div>
+          <!-- Single Team Wrapper End -->
+        </div>
+
+        <div class="col mb-6" data-aos="fade-up" data-aos-duration="2000">
+          <!-- Single Team Wrapper Start -->
+          <div class="single-team-wrapper">
+            <div class="thumb">
+              <a href="/contact"><img class="fit-image" src="assets/images/team/3.jpg" alt="Imagen del equipo" /></a>
+              <!-- Social Share Start -->
+              <div class="social-share">
+                <a title="Facebook" href="#/"><i class="ti-facebook"></i></a>
+                <a title="Instagram" href="#/"><i class="ti-instagram"></i></a>
+              </div>
+              <!-- Social Share End -->
+            </div>
+            <div class="content">
+              <h4 class="title">María López</h4>
+              <h4 class="subtitle">Colorista</h4>
+            </div>
+          </div>
+          <!-- Single Team Wrapper End -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Team Section End -->
 {% endblock %}

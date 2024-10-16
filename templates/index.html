@@ -1,17 +1,51 @@
 {% extends 'base.html' %}
 {% block content %}
-  <h2>Bienvenido a Nuestro Producto/Servicio</h2>
-  <p>Descripción breve del producto o servicio.</p>
+  <!-- Hero/Intro Slider Start -->
+  <div class="section">
+    <div class="hero-slider swiper-container">
+      <div class="swiper-wrapper">
+        <div class="hero-slide-item swiper-slide">
+          <div class="hero-slide-bg">
+            <img src="static/images/slider/slider1-1.png" alt="Slider Image" />
+          </div>
+          <div class="container">
+            <div class="hero-slide-content text-start">
+              <h5 class="sub-title">Tu estilo, nuestra pasión.</h5>
+              <h2 class="title m-0">Cortes de Pelo para Todos</h2>
+              <p class="ms-0">Entendemos tus necesidades al buscar un look perfecto.</p>
+              <a href="/services" class="btn btn-dark btn-hover-primary">Reserva Ahora</a>
+            </div>
+          </div>
+        </div>
 
-  <section id="testimonials">
-    <h3>Testimonios</h3>
-    <p>Testimonio 1: "¡Me encanta este producto!"</p>
-    <p>Testimonio 2: "El mejor servicio que he utilizado."</p>
-  </section>
+        <div class="hero-slide-item swiper-slide">
+          <div class="hero-slide-bg">
+            <img src="static/images/slider/slider1-2.png" alt="Slider Image" />
+          </div>
+          <div class="container">
+            <div class="hero-slide-content text-center text-md-end">
+              <h5 class="sub-title">Tu estilo, nuestra pasión.</h5>
+              <h2 class="title m-0">Estilismo y Cuidado Personal</h2>
+              <p>Transformamos tu imagen con un toque profesional.</p>
+              <a href="/services" class="btn btn-dark btn-hover-primary">Reserva Ahora</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <section id="cta-buttons">
-    <h3>Descubre más</h3>
-    <button>Contacta con nosotros</button>
-    <button>Conoce nuestros servicios</button>
-  </section>
+      <!-- Swiper Pagination Start -->
+      <div class="swiper-pagination d-lg-none"></div>
+      <!-- Swiper Pagination End -->
+
+      <!-- Swiper Navigation Start -->
+      <div class="home-slider-prev swiper-button-prev main-slider-nav d-lg-flex d-none">
+        <i class="icon-arrow-left"></i>
+      </div>
+      <div class="home-slider-next swiper-button-next main-slider-nav d-lg-flex d-none">
+        <i class="icon-arrow-right"></i>
+      </div>
+      <!-- Swiper Navigation End -->
+    </div>
+  </div>
+  <!-- Hero/Intro Slider End -->
 {% endblock %}
